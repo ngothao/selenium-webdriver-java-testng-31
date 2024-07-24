@@ -24,6 +24,7 @@ public class Topic_07_WebElement_Commands
         Assert.assertEquals(driver.getCurrentUrl(),"http://live.techpanda.org/index.php/customer/account/login/");
         driver.findElement(By.xpath("//a[@title=\"Create an Account\"]")).click();
         sleepInSecond(2);
+
     }
     @AfterClass
     public void afterClass()
