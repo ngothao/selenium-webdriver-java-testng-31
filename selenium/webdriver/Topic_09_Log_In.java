@@ -56,20 +56,21 @@ public class Topic_09_Log_In
         Assert.assertTrue(driver.findElement(By.xpath("//div[@id='advice-validate-password-pass']")).isDisplayed());
         sleepInSecond(3);
     }
+    @Test
     public void TC_04_Invalid_Email_Pw()
     {
-        /* Trang web đã thay đổi nên không chạy được case này
+
         driver.get("http://live.techpanda.org/");
         driver.findElement(By.xpath("//div[@class='footer']//a[@title='My Account']")).click();
         sleepInSecond(3);
-        driver.findElement(By.xpath("//input[@id='email']")).sendKeys("thao@gmail.com.com");
-        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("12345333333333");
+        driver.findElement(By.xpath("//input[@id='email']")).sendKeys("guavatester2405@gmail.com");
+        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("ThaoEsoft1@");
         driver.findElement(By.xpath("//button[@title='Login']")).click();
         sleepInSecond(3);
-        Assert.assertTrue(driver.findElement(By.xpath("//div[@id='advice-validate-password-pass']")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//span[text()='Invalid login or password.']")).isDisplayed());
         sleepInSecond(3);
 
-         */
+
     }
 
     @AfterClass
