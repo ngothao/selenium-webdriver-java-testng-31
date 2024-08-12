@@ -46,13 +46,13 @@ public class Topic_12_DropDown_HomeWork
         for(WebElement item:allItems)
         {
             String textItem=item.getText();
-            if(item.equals("8")){
+            if(item.equals("5")){
                 item.click();
                 sleepInSecond(3);
                 break;
             }
         }
-        sleepInSecond(3);
+        Assert.assertEquals(driver.findElement(By.xpath("//span[@id=\"number-button\"]//span[@class=\"ui-selectmenu-text\"]")).getText(),"8");
     }
     @AfterClass
     public void afterClass()
